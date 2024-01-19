@@ -1,0 +1,15 @@
+{
+    "version" : 2,
+    "builds" : [
+        {
+            "src":"GDSC_MyPoll_Backend_API.py",
+            "use" : "@vercel/python"
+        }
+    ],
+    "routes" : [
+        {
+            "src" : "/(.*)",
+            "dest" : "GDSC_MyPoll_Backend_API.py"
+        }
+    ]
+}
